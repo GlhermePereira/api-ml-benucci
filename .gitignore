@@ -1,0 +1,44 @@
+# -------------------------------------------------
+# Python
+# -------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual env
+venv/
+.env/
+.env.bak/
+.venv/
+
+# Environment variables
+*.env
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.dll
+*.dylib
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Geralmente cria pastas e arquivos temporários
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+
