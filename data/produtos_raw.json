@@ -314,6 +314,76 @@
           "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/d17a85aa-a9be-40f2-ad25-4a073d4cb4cd_1763913080750.jpeg",
           "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/a8547ad4-0610-453c-b6da-8d70a82d2aa1_1763913081708.jpeg"
         ]
+      },
+      {
+        "product_id": 26,
+        "product_name": "Mandala decorativa",
+        "price": 80,
+        "description": "Mandala decorativa santinhos",
+        "subcategory": {
+          "id": 5,
+          "name": "Mandalas 24x24cm - P",
+          "slug": "mandalas-24x24cm-p",
+          "category": {
+            "id": 2,
+            "name": "Mandala",
+            "slug": "mandala"
+          }
+        },
+        "theme_ids": [
+          2,
+          3
+        ],
+        "image_urls": [
+          "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/6e01dc3e-8768-4ba5-9bc0-1f57e64e88ff_1763954239950.jpg",
+          "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/6f4a2eb3-f92f-422b-9b02-7633bfaf54f6_1763954244744.jpg",
+          "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/0f51bc24-1855-4bf0-8c74-86d6e0c534f7_1763954246046.jpg"
+        ]
+      },
+      {
+        "product_id": 27,
+        "product_name": "Marcador de página pokemon",
+        "price": 25.9,
+        "description": "Marcadores de páginas estilizados com pokémons!",
+        "subcategory": {
+          "id": 15,
+          "name": "Marcador Geek",
+          "slug": "marcador-geek",
+          "category": {
+            "id": 4,
+            "name": "Marcadores de Livro",
+            "slug": "marcadores-de-livro"
+          }
+        },
+        "theme_ids": [],
+        "image_urls": [
+          "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/8520e8c2-af8e-4d3d-b5c2-c1276c534b36_1763954403344.jpg",
+          "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/9b762ca0-e763-4b82-a5b5-bca4a2d2b204_1763954405050.jpg",
+          "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/2ca34a50-b625-4ab5-bcab-10a45d69e334_1763954406553.jpg"
+        ]
+      },
+      {
+        "product_id": 28,
+        "product_name": "Marcador de livro",
+        "price": 25.9,
+        "description": "Marcador de páginas estilizados",
+        "subcategory": {
+          "id": 16,
+          "name": "Marcador Básico",
+          "slug": "marcador-basico",
+          "category": {
+            "id": 4,
+            "name": "Marcadores de Livro",
+            "slug": "marcadores-de-livro"
+          }
+        },
+        "theme_ids": [
+          12
+        ],
+        "image_urls": [
+          "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/71e57a9d-ebc5-4a0b-bea8-9b649554b450_1763954572343.jpg",
+          "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/05923a0b-bf52-46fd-ac63-5236a09b5610_1763954573852.jpg"
+        ]
       }
     ]
   }
