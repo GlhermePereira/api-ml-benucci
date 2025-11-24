@@ -1,0 +1,316 @@
+[
+    {
+        "product_id": 7,
+        "product_name": "Mandala Pequena 24x24cm",
+        "price": 60,
+        "description": "Mandala pequena ideal para decoração de mesas",
+        "subcategory": {
+            "id": 5,
+            "name": "Mandalas 24x24cm - P",
+            "slug": "mandalas-24x24cm-p",
+            "category": {
+                "id": 2,
+                "name": "Mandala",
+                "slug": "mandala"
+            }
+        },
+        "theme_ids": [
+            2,
+            5
+        ],
+        "image_urls": [
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/e38c4e78-602f-47a2-a70b-402d98bbd534_1763869576792.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/2ef22aff-a788-4e8d-9863-ccacad72b438_1763869581692.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/0c2cb1a0-1b96-4bec-8532-a4829b8d5657_1763869582690.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/249c9092-a5a2-4597-be42-acd1b818d9ce_1763869583491.jpeg"
+        ]
+    },
+    {
+        "product_id": 8,
+        "product_name": "Mandala Azul 50x50cm",
+        "price": 120,
+        "description": "Mandala grande com padrão azul e detalhes espirituais",
+        "subcategory": {
+            "id": 3,
+            "name": "Mandalas 50x50cm - (G)",
+            "slug": "mandalas-50x50cm-g",
+            "category": {
+                "id": 2,
+                "name": "Mandala",
+                "slug": "mandala"
+            }
+        },
+        "theme_ids": [
+            1,
+            5
+        ],
+        "image_urls": [
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/940c16cc-3fdd-4687-9a62-0fce123608b1_1763869829789.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/2bc9cda3-bab4-4062-b945-c367a667d5c3_1763869831396.jpeg"
+        ]
+    },
+    {
+        "product_id": 9,
+        "product_name": "Mandala Vermelha 65x65cm",
+        "price": 100,
+        "description": "Mandala média com detalhes vermelhos e padrão concêntrico",
+        "subcategory": {
+            "id": 4,
+            "name": "Mandalas 65x65cm - M",
+            "slug": "mandalas-65x65cm-m",
+            "category": {
+                "id": 2,
+                "name": "Mandala",
+                "slug": "mandala"
+            }
+        },
+        "theme_ids": [
+            1,
+            2
+        ],
+        "image_urls": [
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/4fc69dcd-cb23-4894-9477-61b88a22edc6_1763869853502.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/3a3b8af7-2708-4e61-9bac-ded45cc1811c_1763869854997.jpeg"
+        ]
+    },
+    {
+        "product_id": 11,
+        "product_name": "Chaveiro Artesanal de Madeira",
+        "price": 25,
+        "description": "Chaveiro artesanal feito de madeira e pintura manual",
+        "subcategory": {
+            "id": 6,
+            "name": "Chaveiros Artesanais",
+            "slug": "chaveiros-artesanais",
+            "category": {
+                "id": 1,
+                "name": "Chaves",
+                "slug": "chaves"
+            }
+        },
+        "theme_ids": [
+            3
+        ],
+        "image_urls": [
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/bc13c763-8c60-4374-bc11-7857d7cd1eca_1763869954492.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/5c077e8f-4f91-46d8-a5d2-c5a13f132d07_1763869956190.jpeg"
+        ]
+    },
+    {
+        "product_id": 12,
+        "product_name": "Porta-Chaves Colorido",
+        "price": 45,
+        "description": "Mini suporte colorido para chaves",
+        "subcategory": {
+            "id": 7,
+            "name": "Porta-Chaves",
+            "slug": "porta-chaves",
+            "category": {
+                "id": 1,
+                "name": "Chaves",
+                "slug": "chaves"
+            }
+        },
+        "theme_ids": [
+            13,
+            14
+        ],
+        "image_urls": [
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/3e9bdfd7-cfff-4bd7-b8fe-24738cdd1dc7_1763691452787.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/a44cc721-fa0f-40ad-8399-cae241b4aa54_1763691454453.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/520a0de6-413e-46f8-8012-d6a563126d09_1763691455656.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/adf7ea50-0801-4226-aa39-81459c658ed9_1763870021990.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/cc313a1e-3ffc-4e59-b2b0-41673dd34733_1763870023394.jpeg"
+        ]
+    },
+    {
+        "product_id": 13,
+        "product_name": "Miniatura Religiosa de Santo",
+        "price": 80,
+        "description": "Miniatura artesanal com representação religiosa",
+        "subcategory": {
+            "id": 8,
+            "name": "Miniatura Religiosa",
+            "slug": "miniatura-religiosa",
+            "category": {
+                "id": 3,
+                "name": "Miniaturas",
+                "slug": "miniaturas"
+            }
+        },
+        "theme_ids": [
+            1,
+            3
+        ],
+        "image_urls": [
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/9a6a745c-da0e-4c35-b743-1ec479897b82_1763870041189.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/1546c148-805d-40a5-801c-2b453e1047e8_1763870042459.jpeg"
+        ]
+    },
+    {
+        "product_id": 17,
+        "product_name": "Marcador Mandala",
+        "price": 20,
+        "description": "Marcador de livro com padrão de mandala",
+        "subcategory": {
+            "id": 13,
+            "name": "Marcador Mandala",
+            "slug": "marcador-mandala",
+            "category": {
+                "id": 4,
+                "name": "Marcadores de Livro",
+                "slug": "marcadores-de-livro"
+            }
+        },
+        "theme_ids": [
+            13,
+            7
+        ],
+        "image_urls": [
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/64b6ff5a-7564-4f92-a0df-ac774bf8a0c4_1763870275601.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/10e03c87-6393-4f70-b495-315aaa783a5c_1763870277016.jpeg"
+        ]
+    },
+    {
+        "product_id": 18,
+        "product_name": "Marcador Santo",
+        "price": 15,
+        "description": "Marcador com arte inspirada em santos",
+        "subcategory": {
+            "id": 14,
+            "name": "Marcador Santo",
+            "slug": "marcador-santo",
+            "category": {
+                "id": 4,
+                "name": "Marcadores de Livro",
+                "slug": "marcadores-de-livro"
+            }
+        },
+        "theme_ids": [
+            3
+        ],
+        "image_urls": [
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/31edb441-6c48-4c8b-a3f6-d89adfe77618_1763870539603.jpg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/790513ca-3d6d-423d-bcc0-4837513f3481_1763870541899.jpg"
+        ]
+    },
+    {
+        "product_id": 20,
+        "product_name": "Chaveiro Artesanal de Madeira",
+        "price": 25,
+        "description": "Chaveiro artesanal feito de madeira e pintura manual",
+        "subcategory": {
+            "id": 6,
+            "name": "Chaveiros Artesanais",
+            "slug": "chaveiros-artesanais",
+            "category": {
+                "id": 1,
+                "name": "Chaves",
+                "slug": "chaves"
+            }
+        },
+        "theme_ids": [
+            3
+        ],
+        "image_urls": [
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/94c4a950-031a-4947-8f41-84736cb06739_1763912963651.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/a1e24645-3c32-4513-b944-2d74615e2382_1763912965204.jpeg"
+        ]
+    },
+    {
+        "product_id": 21,
+        "product_name": "Porta-Chaves Colorido",
+        "price": 45,
+        "description": "Mini suporte colorido para chaves",
+        "subcategory": {
+            "id": 7,
+            "name": "Porta-Chaves",
+            "slug": "porta-chaves",
+            "category": {
+                "id": 1,
+                "name": "Chaves",
+                "slug": "chaves"
+            }
+        },
+        "theme_ids": [
+            13,
+            14
+        ],
+        "image_urls": [
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/ab2ff920-97ef-4656-aea0-5bde9b84adde_1763912993642.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/56549fe8-e310-4cf5-8aa3-7c624d075453_1763912994977.jpeg"
+        ]
+    },
+    {
+        "product_id": 22,
+        "product_name": "Miniatura Religiosa de Santo",
+        "price": 80,
+        "description": "Miniatura artesanal com representação religiosa",
+        "subcategory": {
+            "id": 8,
+            "name": "Miniatura Religiosa",
+            "slug": "miniatura-religiosa",
+            "category": {
+                "id": 3,
+                "name": "Miniaturas",
+                "slug": "miniaturas"
+            }
+        },
+        "theme_ids": [
+            1,
+            3
+        ],
+        "image_urls": [
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/2cf39ec4-247e-4c3c-aef3-0a545818f1da_1763913019997.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/b10676f2-d117-4169-a1f3-faf284405836_1763913021185.jpeg"
+        ]
+    },
+    {
+        "product_id": 23,
+        "product_name": "Miniatura Caiçara",
+        "price": 70,
+        "description": "Miniatura representando a cultura caiçara",
+        "subcategory": {
+            "id": 9,
+            "name": "Miniatura Caiçara",
+            "slug": "miniatura-caicara",
+            "category": {
+                "id": 3,
+                "name": "Miniaturas",
+                "slug": "miniaturas"
+            }
+        },
+        "theme_ids": [
+            5,
+            8
+        ],
+        "image_urls": [
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/b89d5597-4fe6-4472-a194-2fa948d780af_1763913040904.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/c0a0c03d-21cf-4809-9a4e-af2e8b3e5c19_1763913041987.jpeg"
+        ]
+    },
+    {
+        "product_id": 25,
+        "product_name": "Miniatura Animal",
+        "price": 85,
+        "description": "Miniatura de animais feita artesanalmente",
+        "subcategory": {
+            "id": 11,
+            "name": "Miniatura Animal",
+            "slug": "miniatura-animal",
+            "category": {
+                "id": 3,
+                "name": "Miniaturas",
+                "slug": "miniaturas"
+            }
+        },
+        "theme_ids": [
+            10
+        ],
+        "image_urls": [
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/e308a28e-c1d8-429c-a0a1-775e8e1d727a_1763913079243.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/d17a85aa-a9be-40f2-ad25-4a073d4cb4cd_1763913080750.jpeg",
+            "https://nnlyziervanafdjrqvpx.supabase.co/storage/v1/object/public/benucci-img/a8547ad4-0610-453c-b6da-8d70a82d2aa1_1763913081708.jpeg"
+        ]
+    }
+]
