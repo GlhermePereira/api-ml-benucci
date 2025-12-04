@@ -12,6 +12,7 @@ O sistema é composto por três camadas principais:
 
 1. **Aplicativo Mobile (React Native)**  
     Interface utilizada por clientes e artesãos para navegação, visualização e compra.
+    https://github.com/DiegoPereira100/benucci-artesanato-front
     
 2. **Backend Principal (Spring Boot)**  
     Gerencia autenticação, produtos, categorias, usuários, compras e integrações.
