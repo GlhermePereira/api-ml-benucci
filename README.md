@@ -150,7 +150,7 @@ Alterações no código-fonte dependem de autorização, devido à natureza priv
 # 7. Licença
 
 Este projeto está licenciado sob a **MIT License**.  
-Consulte o arquivo `LICENSE` para mais detalhes.
+Consulte o arquivo [License](LICENSE) para mais detalhes.
 
 ---
 
