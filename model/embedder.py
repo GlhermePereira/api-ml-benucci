@@ -1,54 +1,112 @@
 import numpy as np
-from sentence_transformers import SentenceTransformer
-from data.bd import get_products_by_category  # sua função do bd.py que retorna produtos filtrados
-from sklearn.metrics.pairwise import cosine_similarity
+import onnxruntime as ort
+from tokenizers import Tokenizer
+from data.bd import get_products_by_category
+
+
+def normalize(v: np.ndarray) -> np.ndarray:
+    """
+    Normaliza o vetor para norma L2 (evita problemas na similaridade)
+    e garante que seja um vetor 1D.
+    """
+    v = np.ravel(v)  # transforma em 1D
+    norm = np.linalg.norm(v)
+    return v / norm if norm > 0 else v
+
 
 class EmbedderHF:
-    def __init__(self, model_name: str = "sentence-transformers/all-mpnet-base-v2"):
-        print("Carregando modelo local (sentence-transformers). Isso pode levar alguns segundos...")
-        self.model = SentenceTransformer(model_name)
+    """
+    Embedder leve utilizando ONNX Runtime + Tokenizers,
+    compatível com Python 3.11 e deploys sem GPU.
+    """
 
-    def embed_text(self, text: str):
-        emb = self.model.encode([text], show_progress_bar=False)[0]
-        return emb.tolist()
+    def __init__(
+        self,
+        model_path: str = "model/all-MiniLM-L6-v2.onnx",
+        tokenizer_path: str = "model/tokenizer.json",
+        max_length: int = 384
+    ):
+        print("Inicializando Embedder ONNX...")
+        self.session = ort.InferenceSession(model_path, providers=["CPUExecutionProvider"])
+        self.tokenizer = Tokenizer.from_file(tokenizer_path)
+        self.max_length = max_length
+
+    def embed_text(self, text: str) -> np.ndarray:
+        tok = self.tokenizer.encode(text)
+
+        # padding / truncamento
+        input_ids = np.array([tok.ids[:self.max_length] + [0]*(self.max_length - len(tok.ids[:self.max_length]))], dtype=np.int64)
+        attention_mask = np.array([tok.attention_mask[:self.max_length] + [0]*(self.max_length - len(tok.attention_mask[:self.max_length]))], dtype=np.int64)
+        token_type_ids = np.zeros_like(input_ids, dtype=np.int64)
+
+        inputs = {
+            "input_ids": input_ids,
+            "attention_mask": attention_mask,
+            "token_type_ids": token_type_ids
+        }
+
+        outputs = self.session.run(None, inputs)
+        emb = outputs[0][0]
+        return normalize(np.array(emb, dtype=np.float32))
+
 
 class EmbeddingStore:
+    """
+    Armazena textos/embeddings em memória e executa busca por similaridade.
+    Pode carregar automaticamente produtos do banco.
+    """
+
     def __init__(self, embedder: EmbedderHF, category_id: int = None):
-        self.store = []  # lista de tuplas (id, text, embedding)
         self.embedder = embedder
+        self.store = []  # lista de tuplas (id, text, embedding)
+
         if category_id is not None:
             self._load_from_db(category_id)
 
     def _load_from_db(self, category_id: int):
-        products = get_products_by_category(category_id)  # retorna lista de dicts com id e text
+        print(f"Carregando produtos da categoria {category_id}...")
+        products = get_products_by_category(category_id)
+
+        if not products:
+            print("Nenhum produto encontrado no banco.")
+            return
+
         for p in products:
-            self.add(p["id"], p["text"])
+            text = p.get("text") or p.get("description") or ""
+            self.add(p["id"], text)
 
-    def add(self, id: str, text: str):
-        embedding = np.array(self.embedder.embed_text(text))
-        self.store.append((id, text, embedding))
-        print(f"Adicionado: {id}")
+        print(f"Carregados {len(self.store)} produtos.")
 
-    def get_embedding(self, id: str):
-        for item in self.store:
-            if item[0] == id:
-                return item[2]
+    def add(self, item_id: str, text: str):
+        emb = self.embedder.embed_text(text)
+        self.store.append((item_id, text, emb))
+        print(f"Produto {item_id} indexado.")
+
+    def get_embedding(self, item_id: str):
+        for stored_id, _, emb in self.store:
+            if stored_id == item_id:
+                return emb
         return None
 
     def search_similar(self, query_text: str, top_k: int = 5):
-        query_embedding = np.array(self.embedder.embed_text(query_text))
-        similarities = [
-            (item[0], np.dot(query_embedding, item[2]) / (np.linalg.norm(query_embedding) * np.linalg.norm(item[2])))
-            for item in self.store
-        ]
-        similarities.sort(key=lambda x: x[1], reverse=True)
-        return similarities[:top_k]
+        if not self.store:
+            return []
 
-# Exemplo de uso
+        q_emb = self.embedder.embed_text(query_text)
+
+        sims = []
+        for item_id, _, emb in self.store:
+            # garante flatten para evitar erros de array
+            sim = float(np.dot(q_emb.flatten(), emb.flatten()))
+            sims.append((item_id, sim))
+
+        sims.sort(key=lambda x: x[1], reverse=True)
+        return sims[:top_k]
+
+
 if __name__ == "__main__":
     embedder = EmbedderHF()
-    store = EmbeddingStore(embedder, category_id=1)  # já carrega produtos da categoria 1
+    store = EmbeddingStore(embedder, category_id=1)
 
-    print("Produtos carregados e embeddings gerados.")
-    results = store.search_similar("Texto de exemplo")
-    print(results)
+    print("\nBusca de exemplo:")
+    print(store.search_similar("Texto de exemplo"))

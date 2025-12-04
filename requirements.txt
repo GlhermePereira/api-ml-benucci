@@ -4,4 +4,5 @@ numpy
 scikit-learn
 python-dotenv
 psycopg2
-sentence-transformers
+light-embed
+onnxruntime
