@@ -154,4 +154,12 @@ Este projeto está licenciado sob a **MIT License**. Consulte o arquivo [License
 
 ---
 # 8. Demonstração
-![Imagem da API rodando](docs/api-rodando.png)
+- Resposta rota GET /https://api-ml-benucci.onrender.com/recommend/7/2
+
+![Imagem da rota recommed](docs/api-rodando.png)
+
+--- 
+- GET /https://api-ml-benucci.onrender.com/products
+
+![Imagem da rota products](docs/total-products.png)
+
