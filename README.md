@@ -154,4 +154,4 @@ Este projeto está licenciado sob a **MIT License**. Consulte o arquivo [License
 
 ---
 # 8. Demonstração
-![Imagem da API rodando](docs/screenshot-2025-12-04_17-38-03.png)
+![Imagem da API rodando](docs/api-rodando.png)
